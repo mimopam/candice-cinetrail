@@ -5,6 +5,7 @@ import axios from 'axios'
 function Slider() {
     const apiKey = process.env.REACT_APP_API_KEY;
     const baseUrl = process.env.REACT_APP_BASE_URL;
+    const imgBase = process.env.REACT_APP_IMAGE_BASE_URL;
 
     //create state for the upcoming movies
     const [upcomingMovies, setUpcomingMovies] = React.useState([])
@@ -24,7 +25,7 @@ function Slider() {
         }, []
     )
   return (
-    <div>
+    <div style={{backgroundColor:"lightblue", height:"60vh", width:"100%"}}>
         {upcomingMovies[0]?.title} 
     </div>
   )
