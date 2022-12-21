@@ -4,9 +4,10 @@ import axios from 'axios'
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 function Slider() {
-    const apiKey = process.env.REACT_APP_API_KEY;
-    const baseUrl = process.env.REACT_APP_BASE_URL;
-    const imgBase = process.env.REACT_APP_IMAGE_BASE_URL;
+    const apiKey = "c315ba96d8b132c0836df2e55986edc6";
+    const baseUrl = "https://api.themoviedb.org/3";
+    console.log(baseUrl);
+    //const imgBase = process.env.REACT_APP_IMAGE_BASE_URL;
     //base url for images
     const imageUrl = "https://image.tmdb.org/t/p/original"
     //create state for the upcoming movies
